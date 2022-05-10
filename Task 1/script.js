@@ -8,3 +8,16 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+console.log('start');
+
+const button = document.querySelector('#submit-btn');
+button.addEventListener('click', function() {
+    const input = document.querySelector('#search');
+    const kg = input.value;
+    const lb = Math.round((kg * 2.2046)*100)/100 + ' ' + 'lb';
+    const g = Math.round((kg / 0.0010000)*100)/100 + ' ' + 'g';
+    const oz = Math.round((kg * 35.274)*100)/100 + ' ' + 'oz';
+    const output = document.querySelector('#output');
+    output.innerHTML = lb + g + oz;
+    console.log(lb, g, oz);
+});
