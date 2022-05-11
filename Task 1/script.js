@@ -22,5 +22,5 @@ form.addEventListener('submit', (event) => {
     document.querySelector('form').reset();
 })
 
-document.getElementById("output").style.fontSize = "2.5rem";
-document.getElementById("output").style.textAlign = "center";
+document.getElementById('output').style.fontSize = '2.5rem';
+document.getElementById('output').style.textAlign = 'center';
