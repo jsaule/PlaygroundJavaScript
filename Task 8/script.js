@@ -10,18 +10,30 @@ function Calculator(a, b) {
     this.a = a;
     this.b = b;
 
-    sum = a + b;
-    substraction = a - b;
-    multiplication = a * b;
-    division = a/b;
-    
-    return {
-        'sum': sum,
-        'substraction': substraction,
-        'multiplication': multiplication,
-        'division': division
-    };
+    this.sum = function() {
+        s = this.a + this.b;
+        console.log(`Sum: ${s}`);
+    }
+
+    this.subtraction = function() {
+        s = this.a - this.b;
+        console.log(`Subtraction: ${s}`);
+    }
+
+    this.multiplication = function() {
+        s = this.a * this.b;
+        console.log(`Multiplication: ${s}`)
+    }
+
+    this.division = function() {
+        s = this.a / this.b;
+        console.log(`Division: ${s}`)
+    }
 };
 
 const test = new Calculator(10, 2);
-console.log(test);
+
+console.log(test.sum());
+console.log(test.subtraction());
+console.log(test.multiplication());
+console.log(test.division());
