@@ -11,10 +11,11 @@ const audi = {
   color: 'white',
 };
 
+/* Nelabai supratau, ar reikia grąžinti tik pačius 'values' iš keys, ar grupes (ir 'key' ir 'value'). Jei taip, tai pakeisčiau 'Object.values' į 'Object.entries') */
+
 function showObjectKeys(audi) {
-  for (n in audi) {
-    console.log(audi[n]);
-  }
+  const result = Object.values(audi);
+  return result;
 };
 
-showObjectKeys(audi);
+console.log(showObjectKeys(audi));
