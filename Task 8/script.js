@@ -11,28 +11,24 @@ function Calculator(a, b) {
     this.b = b;
 
     this.sum = function() {
-        s = this.a + this.b;
-        console.log(`Sum: ${s}`);
+        console.log(`Sum: ${this.a + this.b}`);
     }
 
     this.subtraction = function() {
-        s = this.a - this.b;
-        console.log(`Subtraction: ${s}`);
+        console.log(`Subtraction: ${this.a - this.b}`);
     }
 
     this.multiplication = function() {
-        s = this.a * this.b;
-        console.log(`Multiplication: ${s}`)
+        console.log(`Multiplication: ${this.a * this.b}`)
     }
 
     this.division = function() {
-        s = this.a / this.b;
-        console.log(`Division: ${s}`)
+        console.log(`Division: ${this.a / this.b}`)
     }
 };
 
 const test = new Calculator(10, 2);
-
+console.log(test);
 console.log(test.sum());
 console.log(test.subtraction());
 console.log(test.multiplication());
