@@ -11,19 +11,19 @@ function Calculator(a, b) {
     this.b = b;
 
     this.sum = function() {
-        console.log(`Sum: ${this.a + this.b}`);
+        return (`Sum: ${this.a + this.b}`);
     }
 
     this.subtraction = function() {
-        console.log(`Subtraction: ${this.a - this.b}`);
+        return (`Subtraction: ${this.a - this.b}`);
     }
 
     this.multiplication = function() {
-        console.log(`Multiplication: ${this.a * this.b}`)
+        return (`Multiplication: ${this.a * this.b}`)
     }
 
     this.division = function() {
-        console.log(`Division: ${this.a / this.b}`)
+        return (`Division: ${this.a / this.b}`)
     }
 };
 
