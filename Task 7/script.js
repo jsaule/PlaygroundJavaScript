@@ -15,7 +15,7 @@ const audi = {
 ar grupes (ir 'key' ir 'value'). Jei taip, tai pakeisčiau 'Object.keys' į 
 'Object.entries' arba 'Object.values' atitinkamai.) */
 
-function showObjectKeys(audi) {
+const showObjectKeys = (audi) => {
   const result = Object.keys(audi);
   return result;
 };
