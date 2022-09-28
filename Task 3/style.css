@@ -59,3 +59,23 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+.h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 0.1rem;
+  color:#474747;
+}
+
+  .p {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 0.8rem;
+  text-decoration: underline;
+  }
